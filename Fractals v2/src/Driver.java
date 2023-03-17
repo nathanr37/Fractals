@@ -26,7 +26,8 @@ public class Driver extends JPanel implements ActionListener {
 //		squaresThree(g, 70, 1, 63);
 //		bigSquare(g, 240, 200, 210);
 
-		snowflake(g, 400, 300, 60, 90, 108);
+//		snowflake(g, 400, 300, 60, 90, 108);
+		triangle(g, 200, 540, 400);
 	
 	}// end of paint method - put code above for anything dealing with drawing -
 
@@ -174,6 +175,21 @@ public class Driver extends JPanel implements ActionListener {
 			two /= 3;
 			three /= 3;
 		}
+		
+	}
+	
+	public void triangle(Graphics g, int x, int y, int size) {
+		if(size < 1) return;
+			g.drawLine(x, y, x+size, y);
+			g.drawLine(x, y, x+size/2, y-size/22);
+			g.drawLine(x+size, y, x+size/2, y-size/22);
+			
+			triangle(g, x, y, size/2);
+			triangle(g, x+size/4, y-size/2, size/2);
+			triangle(g, x+size/2, y, size/2);
+	}
+	
+	public void triangle2(Graphics g, int x, int y, int length) {
 		
 	}
 
