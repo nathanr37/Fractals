@@ -21,13 +21,13 @@ public class Driver extends JPanel implements ActionListener {
 //		clover3(g, 100, 100, 100);
 //		clover4(g, 100, 100, 0);
 		
-//		squaresOne(g, 10, 1, 1);
-//		squaresTwo(g, 20, 1, 19);
-//		squaresThree(g, 70, 1, 63);
-//		bigSquare(g, 240, 200, 210);
+		squaresOne(g, 10, 1, 1);
+		squaresTwo(g, 20, 1, 19);
+		squaresThree(g, 70, 1, 63);
+		bigSquare(g, 240, 200, 210);
 
-//		snowflake(g, 400, 300, 60, 90, 108);
-		triangle(g, 200, 540, 400);
+////		snowflake(g, 400, 300, 60, 90, 108);
+//		triangle(g, 200, 540, 400);
 	
 	}// end of paint method - put code above for anything dealing with drawing -
 
